@@ -1,0 +1,12 @@
+/* Hoja de estilos del proyecto 1Web */
+:root {
+  --fondo: #0a0a0f;
+  --acento: #7c3aed;
+  --texto: #ffffff;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+h1 { color: var(--acento); }
