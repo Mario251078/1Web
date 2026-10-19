@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Inter",sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0a0a0f}
+    .card{width:min(420px,90vw);padding:2.5rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:24px;backdrop-filter:blur(20px);box-shadow:0 25px 50px rgba(0,0,0,.5)}
+    h1{font-size:2rem;font-weight:900;background:linear-gradient(135deg,#a78bfa,#60a5fa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1.5rem;text-align:center}
+    label{display:block;color:rgba(255,255,255,.7);font-size:.85rem;margin:1rem 0 .35rem;font-weight:700}
+    input,textarea{width:100%;padding:.7rem .9rem;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#fff;font-family:inherit;font-size:.95rem}
+    textarea{min-height:110px;resize:vertical}
+    button{margin-top:1.5rem;width:100%;padding:.8rem;border:none;border-radius:999px;font-weight:700;color:#fff;cursor:pointer;background:linear-gradient(135deg,#7c3aed,#2563eb);box-shadow:0 0 20px rgba(124,58,237,.4)}
+    .back{display:block;text-align:center;margin-top:1.2rem;color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Contacto</h1>
+    <form onsubmit="event.preventDefault(); alert('Gracias por tu mensaje');">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" placeholder="Tu nombre" required />
+      <label for="email">Correo</label>
+      <input id="email" type="email" placeholder="tu@correo.com" required />
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a class="back" href="index.html">&larr; Volver a la página principal</a>
+  </main>
+</body>
+</html>
